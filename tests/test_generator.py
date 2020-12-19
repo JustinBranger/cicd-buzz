@@ -12,7 +12,7 @@ def test_sample_single_word():
 def test_sample_multiple_words():
     words = ('foo', 'bar', 'foobar')
     word = generator.sample(words, 2)
-    assert len(words) == 2
+    assert len(word) == 2
     assert word[0] in words
     assert word[1] in words
     assert word[0] is not word[1]
